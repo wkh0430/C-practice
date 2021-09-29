@@ -21,7 +21,7 @@ int main(){
 
     answer1 = -((speed/6.685e8 + 1) / (speed/6.685e8 - 1))*fe; // calculate the value of returned frequency 
 
-    cout << "The returned frequency for " << speed << " mph is "55 << answer1 << " Hz" << endl; // output the returned frequency of velocity
+    cout << "The returned frequency for " << speed << " mph is " << answer1 << " Hz" << endl; // output the returned frequency of velocity
 
     return 0;
 }

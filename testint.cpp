@@ -1,12 +1,13 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int a;
-    
-    a = 3;
+    double a, b;
+    int c;
+    a = 3.0;
+    b = 2.75;
+    c = 5;
 
-    cout << (a + 6);
+    cout << a + b << b + c << endl;
 
     return 0;
-
 }
