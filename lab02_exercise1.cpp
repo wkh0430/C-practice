@@ -1,7 +1,8 @@
-
 #include <iostream>
 using namespace std;
+
 double answer1, answer2;  // These two variables are for Autolab submission check
+
 int main()
 {   
     double grade1;  // declare grade1 as a double variable
@@ -19,7 +20,7 @@ int main()
 
     answer1 = total;      // save the value of total for Autolab submission check
     answer2 = average;    // save the value of average for Autolab submission check
-    
+
     return 0;
 }
 
