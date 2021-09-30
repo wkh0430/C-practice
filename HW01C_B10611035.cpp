@@ -14,14 +14,17 @@ double answer1; // Store the frequency corresponding to 55 mph in this global va
 int main(){
     double speed; // store the speed of the car
     double fe; // store the frequency of the beams
+    double fr; // store the returned frequency of the beams
 
     fe = 2e10; // the frequency of the beams
 
     cin >> speed; // input the speed of the car
 
-    answer1 = -((speed/6.685e8 + 1) / (speed/6.685e8 - 1))*fe; // calculate the value of returned frequency 
+    fr = -((speed/6.685e8 + 1) / (speed/6.685e8 - 1))*fe; // calculate the value of returned frequency 
 
-    cout << "The returned frequency for " << speed << " mph is " << fixed << setprecision(0) << answer1 << " Hz" << endl; // output the returned frequency of velocity
-    
+    cout << "The returned frequency for " << speed << " mph is " << fixed << fr << " Hz" << endl; // output the returned frequency of velocity
+
+    answer1 = fr;
+
     return 0;
 }
