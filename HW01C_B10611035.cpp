@@ -6,10 +6,11 @@
 //================================================================================================
 
 #include <iostream>
-using namespace std;
 #include <iomanip> // Header file needed to use stream manipulators
-    double answer1; // Store the frequency corresponding to 55 mph in this global variable
-    
+using namespace std;
+
+double answer1; // Store the frequency corresponding to 55 mph in this global variable
+
 int main(){
     double speed; // store the speed of the car
     double fe; // store the frequency of the beams
@@ -21,6 +22,6 @@ int main(){
     answer1 = -((speed/6.685e8 + 1) / (speed/6.685e8 - 1))*fe; // calculate the value of returned frequency 
 
     cout << "The returned frequency for " << speed << " mph is " << fixed << setprecision(0) << answer1 << " Hz" << endl; // output the returned frequency of velocity
-
+    
     return 0;
 }
