@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    double a = 2.1234567e10;
+/*    double a = 2.1234567e10;
 
     cout << a << "\n";
 /*    cout << setw(5) << setprecision(7) << a << endl;
@@ -22,6 +22,18 @@ int main(){
     cout << setprecision(5) << a << "\n";
     cout << setprecision(6) << a << "\n";
 */    
-    cout << fixed << a << "\n";
+//    cout << fixed << a << "\n";
+    
+    
+cout << "The maximum load is " << 2000 <<" lbs." << endl;    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     return 0;
 }

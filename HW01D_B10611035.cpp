@@ -11,24 +11,29 @@ using namespace std;
 double answer1; // Store the value of the maximum load in lbs in this global variable
 
 int main(){
-    double S; //  the stress in lbs/in^2
+    double L; // the maximumn load 
+    double S; // the stress in lbs/in^2
     double I; // the beam’s rectangular moment of inertia in units of in^4
     double d; // the distance in inches
     double c; // one-half the height in inches
-    double b; // the base in inches
-    double h; // the height in inches
+    double base; // the base in inches
+    double height; // the height in inches
 
     d = 8.0;
-    b = 2.0;
-    h = 4.0;
+    base = 2.0;
+    height = 4.0;
     S = 3000.0;
 
-    c = h / 2.0;
-    I = (b * h*h*h) / 12.0;
+    c = height / 2.0;
+    I = (base * height*height*height) / 12.0;
 
-    answer1 = (S * I)/(d * c);
+    L = (S * I)/(d * c);
 
-    cout << "The maximum load is " << answer1 <<" lbs." << endl;
+    cout << "The maximum load is " << L <<" lbs." << endl;
+
+    answer1 = L;
+
+    cout << answer1;
 
     return 0;
 }
