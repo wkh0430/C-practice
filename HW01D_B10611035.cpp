@@ -19,21 +19,19 @@ int main(){
     double base; // the base in inches
     double height; // the height in inches
 
-    d = 8.0;
-    base = 2.0;
-    height = 4.0;
-    S = 3000.0;
+    d = 8.0 * 12.0; // 1 foot equals to 12 inches 
+    base = 2.0; // the value of base is 2
+    height = 4.0; // the value of height is 4
+    S = 3000.0; // the value of stress is 3000
 
-    c = height / 2.0;
-    I = (base * height*height*height) / 12.0;
+    c = height / 2.0; // calculating one-half the height in inches of the symmetrical beam 
+    I = (base * height*height*height) / 12.0; // calculating the beam’s rectangular moment of inertia in units of in^4
 
-    L = (S * I)/(d * c);
+    L = (S * I)/(d * c); //  calculating the maximum weight in lbs of the load placed on the beam
 
-    cout << "The maximum load is " << L <<" lbs." << endl;
+    cout << "The maximum load is " << L <<" lbs." << endl; // output the the maximum weight in lbs of the load placed on the beam
 
     answer1 = L;
-
-    cout << answer1;
 
     return 0;
 }
