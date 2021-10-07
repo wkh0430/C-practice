@@ -27,7 +27,7 @@ int main(){
             break;
         case 3:
             ans = a / b;
-            cout << "The product of the numbers entered is " << ans;
+            cout << "The first number divided by the second is " << ans;
 
             break;
     }
