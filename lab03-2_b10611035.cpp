@@ -24,7 +24,7 @@ int main(){
         cout << "The item is toy grade." << endl;
 
     else
-        cout << "The invalid code was entered." << endl;
+        cout << "An invalid code was entered." << endl;
 
     return 0;
 }
