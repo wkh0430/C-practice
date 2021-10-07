@@ -26,8 +26,9 @@ int main()
 
     if (num_3 > max)
     {
+        medium = max; 
         max = num_3;
-        medium = num_1;
+        
     }
 
     else if (num_3 < max && num_3 > min)
