@@ -14,7 +14,7 @@ int main()
          << "Please enter the value of a. b. and c: ";
     cin >> a >> b >> c;
 
-    if(a == 0.0 && b == 0.0)
+    if (a == 0.0 && b == 0.0)
         cout << "The equation is degenerate and has no roots.\n";
 
     else if (a == 0.0)
@@ -27,7 +27,7 @@ int main()
     {
         judge = b * b - 4 * a * c;
 
-        if(judge > 0)
+        if (judge > 0)
         {
             judge = sqrt(judge);
             root1 = (-b + judge)/(2 * a);
@@ -35,7 +35,7 @@ int main()
             cout << "The two real roots are " << root1 << " and " << root2 << endl;
         }
 
-        else if(judge == 0)
+        else if (judge == 0)
             cout << "Both roots are equal to " << -b / (2 * a) << endl;
 
         else
