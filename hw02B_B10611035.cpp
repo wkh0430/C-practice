@@ -5,7 +5,7 @@
 //  DESCRIPTION: This is a program to entrypt a 4-digit integer. 
 //================================================================================================
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int answer1; // Store the number of the first digit after encryption. 
