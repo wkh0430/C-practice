@@ -24,10 +24,19 @@ int main(){
 */    
 //    cout << fixed << a << "\n";
     
-    
+  /*  
 cout << "The maximum load is " << 2000 <<" lbs." << endl;    
     
-    
+    */
+   int a;
+   cin >> a;
+   if(2>a)
+        cout << 1;
+    else if(3>a)
+        cout << 1;
+    else
+        cout<< 0;
+
     
     
     
